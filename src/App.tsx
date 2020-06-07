@@ -1,24 +1,24 @@
 import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import Template from './components/design/template';
+import Background from './components/design/background';
+import TimelineMarker from './components/timelineMarker';
+// import Baby from './components/design/baby';
+import './App.scss';
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <Background />
+      <p className="user">Nicolas Hedoire</p>
+      <div className="timeline">
+        <h1>Naissance: 09/09/1986</h1>
+        <TimelineMarker />
+        <h1>Conception</h1>
+        <Template />
+        <h1>Next</h1>
+        <TimelineMarker />
+        <h1>Next</h1>
+      </div>
     </div>
   );
 }

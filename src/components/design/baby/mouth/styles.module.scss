@@ -1,0 +1,54 @@
+.mouth {
+    width: 150px;
+    height: 100px;
+    background: black;
+    position: relative;
+    border-radius: 50%;
+    overflow: hidden;
+    animation: move-mouth 3s ease-out infinite;
+
+    .tongueLeft{
+        position: absolute;
+        top: 50px;
+        left: -30px;
+        width: 150px;
+        height: 150px;
+        border-radius: 50%;
+        background: #EE5B61;
+    }
+    .tongueRight{
+        position: absolute;
+        top: 50px;
+        right:-30px;
+        width: 150px;
+        height: 150px;
+        border-radius: 50%;
+        background: #EE5B61;
+        overflow: hidden;
+    }
+    .tongueSeparator{
+        position: relative;
+        top: -10px;
+        right:-15px;
+        width: 150px;
+        height: 150px;
+        border-radius: 50%;
+        background: transparent;
+        border: 2px solid rgba(187, 57, 43, .4);
+    }
+}
+
+@keyframes move-mouth {
+    0% {
+        width: 150px;
+        height: 100px;
+    }
+    50% {
+        width: 130px;
+        height: 80px;
+    }
+    100% {
+        width: 150px;
+        height: 100px;
+    }
+  }

@@ -1,0 +1,146 @@
+//https://cssanimation.rocks/fr/spheres/
+
+.eyesContainer {
+    position: relative;
+    width: 400px;
+    height: 200px;
+    display: flex;
+    justify-content: space-between;
+    margin: 50px;
+  }
+
+.eyeLeftContainer {
+    position: relative;
+    width: 175px;
+    height: 200px;
+}
+
+.eyeRightContainer {
+    position: relative;
+    width: 175px;
+    height: 200px;
+}
+
+ .eyelidsTop {
+     width: 150px;
+     height: 50px;
+     left: 14px;
+     top: -5px;
+     background: radial-gradient(circle at 50% 40%, #eebb99, #dbab8b 66%, #cca081 100%);
+     position: absolute;
+     border-top-left-radius: 200px * 4;
+     border-top-right-radius: 200px * 4;
+     border-bottom: 1px solid rgb(30, 30, 30);
+     z-index: 1;
+     animation: move-eyelidsTop 2s ease-out infinite;
+ } 
+
+ .eyelidsBottom {
+    width: 170px;
+    height: 80px;
+    left: 3px;
+    bottom: -5px;
+    background: radial-gradient(circle at 50% 40%, #eebb99, #dbab8b 66%, #cca081 100%);
+    position: absolute;
+    border-bottom-left-radius: 200px * 4;
+    border-bottom-right-radius: 200px * 4;
+    border-top: 1px solid rgb(30, 30, 30);
+    z-index: 1;
+    animation: move-eyelidsBotton 2s ease-out infinite;
+} 
+
+.eye {
+    display: inline-block;
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    border-radius: 50%;
+    position: relative;
+    background: radial-gradient(circle at 50% 40%, #fcfcfc, #efeff1 66%, #9b5050 100%);
+  }
+  
+  .iris {
+    width: 40%;
+    height: 40%;
+    border-radius: 100%;
+    margin: 50px -35px;
+    background: radial-gradient(circle at 50% 50%, #2ecc71 0%, #27ae60 30%, #2F7361 100%);
+    position: absolute;
+    animation: move-eye 5s ease-out infinite;
+  }
+  .iris:before {
+    content: "";
+    display: block;
+    position: absolute;
+    width: 37.5%;
+    height: 37.5%;
+    border-radius: 100%;
+    top: 31.25%;
+    left: 31.25%;
+    background: black;
+  }
+  .iris:after {
+    content: "";
+    display: block;
+    position: absolute;
+    width: 31.25%;
+    height: 31.25%;
+    border-radius: 100%;
+    top: 18.75%;
+    left: 18.75%;
+    background: rgba(255, 255, 255, 0.2);
+  }
+
+
+  @keyframes move-eyelidsTop {
+    0% {
+      left: 14px;
+      top: -5px;
+    }
+    50% {
+      left: 14px;
+      top: 0px;
+    }
+    100% {
+      left: 14px;
+      top: -5px;
+    }
+  }
+
+  @keyframes move-eyelidsBotton {
+    0% {
+      left: 3px;
+      bottom: -5px;
+    }
+    50% {
+      left: 3px;
+      bottom: 0px;
+    }
+    100% {
+      left: 3px;
+      bottom: -5px;
+    }
+  }
+
+
+  @keyframes move-eye {
+    0% {
+        margin: 50px -35px;
+    }
+    25% {
+        margin: 50px 0px;
+    }
+    50% {
+        margin: 50px  -55px;
+    }
+    75% {
+        margin: 50px  -35px;
+    }
+    85% {
+      margin: 50px  -35px;
+    }
+    100% {
+        margin: 50px  -35px;
+    }
+  }
+  
