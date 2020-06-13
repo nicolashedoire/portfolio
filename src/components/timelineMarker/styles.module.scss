@@ -1,20 +1,46 @@
 .timelineMarker {
     position: relative;
-    width: 20px;
-    height: 20px;
+    width: 10px;
+    height: 10px;
     border-radius: 50%;
-    background-color: rgba(30, 30, 30, .5);
-    border: 3px solid rgba(190, 208, 233, .5);
+    background-color: transparent;
+    border: 5px solid rgba(29, 209, 161, .7);
+    box-shadow: 0 0 14px 4px rgba(29, 209, 161, .7);
     display: flex;
     justify-content: center;
     justify-items: center;
     align-items: center;
     align-content: center;
+    z-index: 99999999;
 }
 
 .timelineLink {
     position: relative;
-    width: 5px;
-    height: 200px;
-    background: rgba(30, 30, 30, .5);
+    z-index: 99999999;
+    width: 6px;
+    height: 120px;
+    background: rgba(29, 209, 161, .7);
+    box-shadow: 0 0 14px 4px rgba(29, 209, 161, .7);
 }
+
+// .blueSphere {
+//     position: absolute;
+//     top: 10px;
+//     left: 10px;
+//     height: 16px;
+//     width: 16px;
+//     border-radius: 100%;
+//     &:after {
+//       content: "";
+//       position: absolute;
+//       top: 0;
+//       left: 0;
+//       transform: translate(-50%, -50%);
+//       height: 20px;
+//       width: 20px;
+//       border-radius: 100%;
+//        background: cyan;
+//       border-radius: 100%;
+//       box-shadow: 0 0 14px 4px cyan;
+//     }
+//   }

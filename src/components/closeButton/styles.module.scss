@@ -1,0 +1,27 @@
+.close {
+    position: relative;
+    height: auto;
+    width: 36px;
+    display : flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-end;
+    z-index: 999999;
+    cursor: pointer;
+
+    .menuBar{
+        position: relative;
+        display: inline-block;
+        background-color: white;
+        height: 2px;
+        margin-bottom: 6px;
+        width: 100%;
+    }
+
+    .bar1 {
+        transform: rotate(45deg) translateX(5px);
+    }
+    .bar2 {
+        transform: rotate(-45deg) translateX(5px);
+    }
+}

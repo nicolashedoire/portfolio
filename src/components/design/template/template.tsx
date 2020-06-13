@@ -7,11 +7,11 @@ export default function Template() {
 
     const renderSidebarMenu = (itemPosition: number) => {
         return itemPosition === 3 ?
-            <div className={styles.sidebarMenuItemSelected}>
+            <div key={itemPosition} className={styles.sidebarMenuItemSelected}>
                 <div className={`${styles.circleMediumRed}`} />
                 <div className={`${styles.textTemplate} ${styles.darkTextTemplate}`} />
             </div> :
-            <div className={styles.sidebarMenuItem}>
+            <div key={itemPosition} className={styles.sidebarMenuItem}>
                 <div className={`${styles.circleMedium}`} />
                 <div className={`${styles.textTemplate} ${styles.lightTextTemplate}`} />
             </div>

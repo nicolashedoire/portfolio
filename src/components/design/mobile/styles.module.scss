@@ -1,0 +1,104 @@
+.mobile{
+  position: relative;
+  display: inline-block;
+  background: #333333;
+  background: linear-gradient(135deg, #333333, #4e4d4d);
+  border-radius: 30px;
+  padding: 30px 10px 15px 10px;
+  margin: 15px;
+  width: 150px;
+  height: 300px;
+  .screen{
+      border-radius: 1px;
+      width: 150px;
+      height: 270px;
+      background: white;
+      position: relative;
+      .topBar{
+          position: absolute;
+          width: 100%;
+          height: 15px;
+          background: silver;
+      }
+      .content{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: 235px;
+        overflow: hidden;
+      }
+      .controls{
+          position: absolute;
+          width: 100%;
+          height: 20px;
+          background: rgb(30,30,30);
+          bottom: 0;
+          display: flex;
+          flex-direction: row;
+          .control{
+              width: 33%;
+              height: 20px;
+              display: flex;
+              justify-content: center;
+              align-items: center;
+
+              .square{
+                  width: 5px;
+                  height: 5px;
+                  border: 2px solid white;
+                  border-radius: 2px;
+              }
+              .circle{
+                width: 5px;
+                height: 5px;
+                border: 2px solid white;
+                border-radius: 50%;
+              }
+              .triangle {
+                position: relative;
+                width: 50px;
+                height: 32px;
+                border: 10px solid white;
+                border-radius: 10px;
+                transform: rotate(45deg) scale(.15);
+                .hidePart{
+                    width: 50px;
+                    height: 63px;
+                    background: rgb(30,30,30);
+                    transform: rotate(-45deg);
+                    right: -34px;
+                    position: absolute;
+                    bottom: 6px;
+                    border-left: 10px solid white;
+                }
+              }
+          }
+      }
+  }
+
+  &:before {
+    content: "";
+    position: absolute;
+    top: 12px;
+    left: 50%;
+    transform: translateX(-50%);
+    height: 5px;
+    width: 45px;
+    border-radius: 10px;
+    background-color: #4e4d4d;
+  }
+
+  &:after {
+    content: "";
+    position: absolute;
+    bottom: 7px;
+    left: 50%;
+    transform: translateX(-50%);
+    height: 30px;
+    width: 30px;
+    border-radius: 50%;
+    background-color: #383737;
+    border: 1px solid grey;
+  }
+}
+
